@@ -1,0 +1,18 @@
+@model IEnumerable<assignment_4.Models.Blog>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Add">Create New</a>
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <partial name="_PostPartial" model="item"/>
+    }
+</div>

@@ -1,0 +1,24 @@
+﻿@model assignment_4.Models.Blog
+
+<div class="col-4 p-4 border">
+    <h1 class="Title">
+        @Html.DisplayName(Model.Title)
+    </h1>
+    <p class="Nickname-wrapper">
+        Created by <span class="Nickname">@Html.DisplayFor(modelItem => Model.ApplicationUser.Nickname)</span>
+    </p>
+    <h6 class="Summary">
+        @Html.DisplayFor(modelItem => Model.Summary)
+    </h6>
+    <p class="Content">
+        @Html.DisplayFor(modelItem => Model.Content)
+    </p>
+    <p class="Time">
+        [@Html.DisplayFor(modelItem => Model.Timestamp)]
+    </p>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Details" asp-route-id="@Model.Id">Details</a> |
+        <a asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+    </div>
+</div>
