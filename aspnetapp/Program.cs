@@ -28,8 +28,6 @@ using (var services = app.Services.CreateScope())
     // Initialise the database using the initializer from Data/ExampleDbInitializer.cs
     if (app.Environment.IsDevelopment())
         ApplicationDbInitializer.Initialize(db, um);
-    else
-        db.Database.Migrate();
 }
 
 
