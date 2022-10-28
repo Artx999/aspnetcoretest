@@ -6,6 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>aspnet-assignment_4-7B4404CE-BF65-4E12-90FE-3BD4BBE3D170</UserSecretsId>
         <RootNamespace>assignment_4</RootNamespace>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
